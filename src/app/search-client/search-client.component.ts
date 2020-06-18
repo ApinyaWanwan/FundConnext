@@ -36,4 +36,8 @@ export class SearchClientComponent implements OnInit {
       this.filterClients = filterItems;
     }
   }
+
+  redirectInverDetail(clientId: number) {
+
+  }
 }

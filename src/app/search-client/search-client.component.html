@@ -18,7 +18,7 @@
       <table class="table search-result">
         <tbody>
           <div class="results" *ngFor="let item of filterClients">
-            <tr *ngIf="clientList">{{ item.thaiFullname }}</tr>
+            <tr (click)="redirectInverDetail(item.id)">{{ item.thaiFullname }}</tr>
           </div>
         </tbody>
       </table>
