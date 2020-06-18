@@ -16,7 +16,7 @@ function createClientInstance(no: number) {
   const clientJson = createClientJson(no);
   const client = new Clients();
   client.id = clientJson.id;
-  client.thaiFullName = clientJson.thaiFullName;
+  client.thaiFullname = clientJson.thaiFullname;
 
   return client;
 }
@@ -24,7 +24,7 @@ function createClientInstance(no: number) {
 function createClientJson(no: number) {
   const client = {
     id: no,
-    thaiFullName: 'MOCK_NAME' + no
+    thaiFullname: 'MOCK_NAME' + no
   };
   return client;
 }

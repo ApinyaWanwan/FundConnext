@@ -1,6 +1,6 @@
 export class Clients {
   id: number;
-  thaiFullName: string;
+  thaiFullname: string;
 
   static deserialize(input: any): Clients {
     const client = new Clients();
