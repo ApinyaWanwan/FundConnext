@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ClientService } from '../services/client.service';
+import { Clients } from '../model/clients.model';
 
 @Component({
   selector: 'app-search-client',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-client.component.scss']
 })
 export class SearchClientComponent implements OnInit {
+  clientList: Clients;
 
-  constructor() { }
+  constructor(private clientService: ClientService) { }
 
   ngOnInit() {
+  }
+
+  getClients() {
+    this.clientService.getClients().subscribe(data => {
+      console.log('data: ', data);
+    });
   }
 
 }
