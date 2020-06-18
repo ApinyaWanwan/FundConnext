@@ -1,6 +1,6 @@
 import { ClientService } from '../services/client.service';
 import { SearchClientComponent } from './search-client.component';
-import { of } from 'rxjs';
+import { of, throwError } from 'rxjs';
 import { Clients } from '../model/clients.model';
 
 describe('SearchClientComponent', () => {
@@ -26,6 +26,15 @@ describe('SearchClientComponent', () => {
       component.getClients();
 
       expect(component.clientList).toEqual(response);
+    });
+
+    it('should NOT set clientList when call service get clients failed', () => {
+      const response = [Clients.deserialize({ id: 1 })];
+      spyOn(clientService, 'getClients').and.returnValue(throwError({}));
+
+      component.getClients();
+
+      expect(component.clientList).not.toEqual(response);
     });
 
   });

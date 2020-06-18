@@ -18,6 +18,8 @@ export class SearchClientComponent implements OnInit {
   getClients() {
     this.clientService.getClients().subscribe(data => {
       this.clientList = data;
+    }, (err) => {
+      console.log('Get clients error: ', err);
     });
   }
 
