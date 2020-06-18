@@ -75,6 +75,14 @@ describe('SearchClientComponent', () => {
 
       expect(router.navigate).toHaveBeenCalledWith(['/invester-detail'], jasmine.anything());
     });
+
+    it('should redirect to invester-detail with state clientId', () => {
+      const id = 110;
+
+      component.redirectInverDetail(id);
+
+      expect(router.navigate).toHaveBeenCalledWith(['/invester-detail'], {state: { clientId: id }});
+    });
   });
 
 });

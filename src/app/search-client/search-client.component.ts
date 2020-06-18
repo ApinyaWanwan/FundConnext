@@ -42,6 +42,6 @@ export class SearchClientComponent implements OnInit {
   }
 
   redirectInverDetail(id: number) {
-    this.router.navigate(['/invester-detail'], {});
+    this.router.navigate(['/invester-detail'], { state: { clientId: id } });
   }
 }
