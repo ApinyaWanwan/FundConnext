@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-invester-detail',
@@ -6,14 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invester-detail.component.scss']
 })
 export class InvesterDetailComponent implements OnInit {
+  clientId: number;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.getExtras();
   }
 
   getExtras() {
-
+    this.route.queryParams.subscribe(params => {
+      if (this.router.getCurrentNavigation().extras.state) {
+        this.clientId = this.router.getCurrentNavigation().extras.state.clientId;
+      }
+    });
   }
 }

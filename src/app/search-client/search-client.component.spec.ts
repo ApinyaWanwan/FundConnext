@@ -4,7 +4,7 @@ import { of, throwError } from 'rxjs';
 import { Clients } from '../model/clients.model';
 
 describe('SearchClientComponent', () => {
-  let component;
+  let component: SearchClientComponent;
   let clientService;
   let router;
 
