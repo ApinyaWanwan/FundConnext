@@ -1,6 +1,7 @@
 import { ClientService } from './client.service';
 import { of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Clients } from '../model/clients.model';
 
 describe('ClientService', () => {
   let service: ClientService;
@@ -19,6 +20,16 @@ describe('ClientService', () => {
 
       expect(httpClient.get).toHaveBeenCalled();
     });
+
+    it('should return array of clients', () => {
+      const client = Clients.deserialize({ id: 1 });
+      spyOn(httpClient, 'get').and.returnValue(of([client]));
+
+      service.getClients().subscribe(data => {
+        expect(data[0]).toEqual(client);
+      });
+    });
+
   });
 
 });
