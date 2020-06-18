@@ -9,7 +9,7 @@
             </svg>
         </span>
       </div>
-      <input type="text" class="form-control" placeholder="Search Name or Last Name">
+      <input type="text" (keyup)="onSearch($event.target.value)" autocomplete="off" class="form-control" placeholder="Search Name or Last Name">
     </div>
   </div>
 
@@ -17,7 +17,7 @@
     <div class="col-6">
       <table class="table search-result">
         <tbody>
-          <div class="results" *ngFor="let item of clientList">
+          <div class="results" *ngFor="let item of filterClients">
             <tr *ngIf="clientList">{{ item.thaiFullname }}</tr>
           </div>
         </tbody>
