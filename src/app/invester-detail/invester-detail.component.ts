@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { InvesterService } from '../services/invester.service';
+import { Invester } from '../model/invester.model';
 
 @Component({
   selector: 'app-invester-detail',
@@ -7,22 +9,25 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./invester-detail.component.scss']
 })
 export class InvesterDetailComponent implements OnInit {
-  clientId: number;
+  clientId: string;
+  investerDetailList: Invester[];
+  investerDetail: Invester;
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
+    private investerService: InvesterService
   ) {}
 
   ngOnInit() {
-    this.getExtras();
+    this.clientId = this.getClientIdFromRoute();
+    this.getDetails();
   }
 
-  getExtras() {
-    this.route.queryParams.subscribe(params => {
-      if (this.router.getCurrentNavigation().extras.state) {
-        this.clientId = this.router.getCurrentNavigation().extras.state.clientId;
-      }
-    });
+  getClientIdFromRoute() {
+    return this.route.snapshot.paramMap.get('clientId');
+  }
+
+  getDetails() {
+
   }
 }

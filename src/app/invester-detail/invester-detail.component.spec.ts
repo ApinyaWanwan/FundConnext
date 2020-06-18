@@ -14,23 +14,14 @@ describe('InvesterDetailComponent', () => {
   });
 
   describe('ngOnInit', () => {
-    it('should call getExtras', () => {
-      spyOn(component, 'getExtras');
+    it('should set client id from route', () => {
+      spyOn(component, 'getClientIdFromRoute').and.returnValue('MOCK_ID');
+
       component.ngOnInit();
-      expect(component.getExtras).toHaveBeenCalled();
+
+      expect(component.clientId).toBe('MOCK_ID');
     });
-  });
 
-  describe('getExtras', () => {
-    it('should set field clientId with state extra clientId = 110', () => {
-      route.queryParams = of({});
-      const navigation = { extras: { state: { clientId: 110 } } };
-      router.getCurrentNavigation.and.returnValue(navigation);
-
-      component.getExtras();
-
-      expect(component.clientId).toEqual(110);
-    });
   });
 
 });
