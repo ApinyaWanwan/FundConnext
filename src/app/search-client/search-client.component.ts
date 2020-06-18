@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientService } from '../services/client.service';
 import { Clients } from '../model/clients.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-client',
@@ -11,7 +12,10 @@ export class SearchClientComponent implements OnInit {
   clientList: Clients[];
   filterClients: Clients[];
 
-  constructor(private clientService: ClientService) { }
+  constructor(
+    private clientService: ClientService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.getClients();
@@ -37,7 +41,7 @@ export class SearchClientComponent implements OnInit {
     }
   }
 
-  redirectInverDetail(clientId: number) {
-
+  redirectInverDetail(id: number) {
+    this.router.navigate(['/invester-detail'], {});
   }
 }

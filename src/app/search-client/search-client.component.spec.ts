@@ -6,10 +6,12 @@ import { Clients } from '../model/clients.model';
 describe('SearchClientComponent', () => {
   let component;
   let clientService;
+  let router;
 
   beforeEach(() => {
     clientService = new ClientService(null);
-    component = new SearchClientComponent(clientService);
+    router =     router = jasmine.createSpyObj('Router', ['navigate']);
+    component = new SearchClientComponent(clientService, router);
   });
 
   describe('ngOnInit', () => {
@@ -63,8 +65,16 @@ describe('SearchClientComponent', () => {
 
       expect(component.filterClients).toEqual([component.clientList[0]]);
     });
-
   });
 
+  describe('redirectInverDetail', () => {
+    it('should redirect to invester-detail', () => {
+      const id = 110;
+
+      component.redirectInverDetail(id);
+
+      expect(router.navigate).toHaveBeenCalledWith(['/invester-detail'], jasmine.anything());
+    });
+  });
 
 });
