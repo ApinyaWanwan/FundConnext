@@ -5,7 +5,7 @@ import { InvesterDetailComponent } from './invester-detail/invester-detail.compo
 
 const routes: Routes = [
   { path: '', component: SearchClientComponent },
-  { path: 'invester-detail', component: InvesterDetailComponent }
+  { path: 'invester-detail/:clientId', component: InvesterDetailComponent }
 
 ];
 
