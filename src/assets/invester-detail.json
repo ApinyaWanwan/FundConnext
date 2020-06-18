@@ -1,0 +1,462 @@
+[
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "PJ_1",
+    "unitholder_type": "Segregate",
+    "fund_code": "ABAG",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "PJ_1",
+    "unitholder_type": "Segregate",
+    "fund_code": "ABAPAC-RMF",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "SCBAM",
+    "unitholder_id": "DUMMY5484",
+    "unitholder_type": "Omnibus",
+    "fund_code": "SCBDVFUND",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "Aber-455",
+    "unitholder_type": "Omnibus",
+    "fund_code": "ABAG",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-PJ_1",
+    "unitholder_type": "Omnibus",
+    "fund_code": "001181807",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 101,
+    "account_id": "PJ_1",
+    "amc_code": "SCBAM",
+    "unitholder_id": "SEG",
+    "unitholder_type": "Segregate",
+    "fund_code": "SCBDVFUND",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "SRC1111",
+    "unitholder_type": "Omnibus",
+    "fund_code": "ABG",
+    "unit": 77000000.0000,
+    "thb": 770000000.00
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "SRC1111",
+    "unitholder_type": "Omnibus",
+    "fund_code": "ABJO",
+    "unit": 77000000.0000,
+    "thb": 770000000.00
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "SRC1111",
+    "unitholder_type": "Omnibus",
+    "fund_code": "MN-APREIT-A",
+    "unit": 177804.3470,
+    "thb": 2136283.67
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "SRC1111",
+    "unitholder_type": "Omnibus",
+    "fund_code": "UCHINA",
+    "unit": 77000000.0000,
+    "thb": 770000000.00
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "SRC1110",
+    "unitholder_type": "Omnibus",
+    "fund_code": "ASPGIPLUS",
+    "unit": 520.0000,
+    "thb": 5000.00
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "KASSET",
+    "unitholder_id": "DUMMY5349",
+    "unitholder_type": "Segregate",
+    "fund_code": "K-FIXEDPLUS-A",
+    "unit": 177804.3470,
+    "thb": 2136283.67
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-1279025-01",
+    "unitholder_type": "OMN",
+    "fund_code": "005275075",
+    "unit": 996.8047,
+    "thb": 9687.19
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-1279025-01",
+    "unitholder_type": "OMN",
+    "fund_code": "005275075",
+    "unit": 1013.1456,
+    "thb": 10131.45
+  },
+  {
+    "investor_id": 102,
+    "account_id": "1279025-01",
+    "amc_code": "CBL",
+    "unitholder_id": "SCBT-CBL-1279025-01",
+    "unitholder_type": "OMN",
+    "fund_code": "034150362",
+    "unit": 1013.1456,
+    "thb": 10131.45
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "Aber-001",
+    "unitholder_type": "Omnibus",
+    "fund_code": "ABAG",
+    "unit": 204671.9790,
+    "thb": 3030107.25
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "Aber-991",
+    "unitholder_type": "SEG",
+    "fund_code": "ABAG",
+    "unit": 204671.9790,
+    "thb": 3030107.25
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "BBLAM",
+    "unitholder_id": "DUMMY5237",
+    "unitholder_type": "SEG_T",
+    "fund_code": "B-LTF",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "SCBAM",
+    "unitholder_id": "DUMMY5384",
+    "unitholder_type": "SEG",
+    "fund_code": "SCBDVFUND",
+    "unit": 66000000.0000,
+    "thb": 1000000000.00
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "SCBAM",
+    "unitholder_id": "DUMMY5384",
+    "unitholder_type": "SEG",
+    "fund_code": "SCBGPLUS",
+    "unit": 100000000.0000,
+    "thb": 1000000000.00
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "SCBAM",
+    "unitholder_id": "DUMMY5496",
+    "unitholder_type": "Omnibus",
+    "fund_code": "SCBDVFUND",
+    "unit": 88000000.0000,
+    "thb": 770000000.00
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "SCBAM",
+    "unitholder_id": "DUMMY5496",
+    "unitholder_type": "Omnibus",
+    "fund_code": "034150362",
+    "unit": 77000000.0000,
+    "thb": 770000000.00
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "ONEAM",
+    "unitholder_id": "DUMMY7235",
+    "unitholder_type": "Omnibus",
+    "fund_code": "1AM-DAILY",
+    "unit": 10000000.0000,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 103,
+    "account_id": "9-111",
+    "amc_code": "ABERDEEN",
+    "unitholder_id": "SEG",
+    "unitholder_type": "SEG",
+    "fund_code": "SCBDVFUND",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  },
+  {
+    "investor_id": 103,
+    "account_id": "pajjai_1",
+    "amc_code": "SCBAM",
+    "unitholder_id": "SEG",
+    "unitholder_type": "SEG",
+    "fund_code": "SCBDVFUND",
+    "unit": 10100000.7281,
+    "thb": 10000000.00
+  }
+]
