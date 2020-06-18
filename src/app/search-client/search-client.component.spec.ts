@@ -44,7 +44,14 @@ describe('SearchClientComponent', () => {
 
       expect(component.clientList).not.toEqual(response);
     });
-
   });
+
+  describe('onSearch', () => {
+    it('should set filterClients to empty array when search term is empty string', () => {
+      component.onSearch('');
+      expect(component.filterClients).toEqual([]);
+    });
+  });
+
 
 });

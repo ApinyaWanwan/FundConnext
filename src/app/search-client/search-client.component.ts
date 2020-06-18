@@ -9,6 +9,7 @@ import { Clients } from '../model/clients.model';
 })
 export class SearchClientComponent implements OnInit {
   clientList: Clients[];
+  filterClients: Clients[];
 
   constructor(private clientService: ClientService) { }
 
@@ -24,4 +25,10 @@ export class SearchClientComponent implements OnInit {
     });
   }
 
+  onSearch(searchTerm: any) {
+    if (searchTerm === '') {
+      this.filterClients = [];
+      return;
+    }
+  }
 }
