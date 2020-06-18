@@ -17,10 +17,8 @@
     <div class="col-6">
       <table class="table search-result">
         <tbody>
-          <div class="results">
-            <tr>Name</tr>
-            <tr>Name</tr>
-            <tr>Name</tr>
+          <div class="results" *ngFor="let item of clientList">
+            <tr *ngIf="clientList">{{ item.thaiFullname }}</tr>
           </div>
         </tbody>
       </table>
