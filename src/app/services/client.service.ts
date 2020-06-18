@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,6 @@ export class ClientService {
   constructor(private http: HttpClient) { }
 
   getClients() {
-
+    this.http.get('../assets/clients.json');
   }
 }
