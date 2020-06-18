@@ -15,7 +15,7 @@
 
   <div class="row justify-content-md-center">
     <div class="col-6">
-      <table class="table search-result">
+      <table class="table table-hover search-result">
         <tbody>
           <div class="results" *ngFor="let item of filterClients">
             <tr (click)="redirectInverDetail(item.id)">{{ item.thaiFullname }}</tr>

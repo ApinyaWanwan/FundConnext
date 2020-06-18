@@ -10,6 +10,10 @@ export class InvesterDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.getExtras();
   }
 
+  getExtras() {
+
+  }
 }
