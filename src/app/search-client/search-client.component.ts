@@ -8,7 +8,7 @@ import { Clients } from '../model/clients.model';
   styleUrls: ['./search-client.component.scss']
 })
 export class SearchClientComponent implements OnInit {
-  clientList: Clients;
+  clientList: Clients[];
 
   constructor(private clientService: ClientService) { }
 
@@ -17,7 +17,7 @@ export class SearchClientComponent implements OnInit {
 
   getClients() {
     this.clientService.getClients().subscribe(data => {
-      console.log('data: ', data);
+      this.clientList = data;
     });
   }
 
