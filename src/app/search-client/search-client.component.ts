@@ -30,5 +30,10 @@ export class SearchClientComponent implements OnInit {
       this.filterClients = [];
       return;
     }
+
+    const filterItems = this.clientList.filter(el => el.thaiFullname.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1);
+    if (filterItems) {
+      this.filterClients = filterItems;
+    }
   }
 }

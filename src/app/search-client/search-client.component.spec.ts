@@ -51,6 +51,19 @@ describe('SearchClientComponent', () => {
       component.onSearch('');
       expect(component.filterClients).toEqual([]);
     });
+
+    it('should set filterClients with clientList array[0] when search term contains client thaiFullname', () => {
+      const searchTerm = 'MOCK_SEARCH_1';
+      component.clientList = [
+        Clients.deserialize({ id: 1, thaiFullname: 'MOCK_SEARCH_1' }),
+        Clients.deserialize({ id: 2, thaiFullname: 'MOCK_SEARCH_2' })
+      ];
+
+      component.onSearch(searchTerm);
+
+      expect(component.filterClients).toEqual([component.clientList[0]]);
+    });
+
   });
 
 
