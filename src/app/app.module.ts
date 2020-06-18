@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchClientComponent } from './search-client/search-client.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InvesterDetailComponent } from './invester-detail/invester-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchClientComponent
+    SearchClientComponent,
+    InvesterDetailComponent
   ],
   imports: [
     BrowserModule,
