@@ -12,6 +12,14 @@ describe('SearchClientComponent', () => {
     component = new SearchClientComponent(clientService);
   });
 
+  describe('ngOnInit', () => {
+    it('should call getClients', () => {
+      spyOn(component, 'getClients');
+      component.ngOnInit();
+      expect(component.getClients).toHaveBeenCalled();
+    });
+  });
+
   describe('getClients', () => {
     it('should call service get clients', () => {
       spyOn(clientService, 'getClients').and.returnValue(of());

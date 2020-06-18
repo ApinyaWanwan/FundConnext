@@ -13,6 +13,7 @@ export class SearchClientComponent implements OnInit {
   constructor(private clientService: ClientService) { }
 
   ngOnInit() {
+    this.getClients();
   }
 
   getClients() {
