@@ -62,7 +62,17 @@ describe('InvesterDetailComponent', () => {
 
       expect(component.setInvesterById).toHaveBeenCalledWith(component.investerList);
     });
+  });
 
+  describe('setInvesterById', () => {
+    it('should set filterInvester with array of investerList that have invester_id equle clientId', () => {
+      const investerList = [Invester.deserialize({ investor_id: 110 }), Invester.deserialize({ investor_id: 111 })];
+      component.clientId = '111';
+
+      component.setInvesterById(investerList);
+
+      expect(component.filterInvester).toEqual([investerList[1]]);
+    });
   });
 
 });
