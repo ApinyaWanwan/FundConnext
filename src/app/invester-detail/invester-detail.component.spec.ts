@@ -65,13 +65,23 @@ describe('InvesterDetailComponent', () => {
   });
 
   describe('setInvesterById', () => {
-    it('should set filterInvester with array of investerList that have invester_id equle clientId', () => {
+    it('should set filterInvester with array of investerList that have invester_id equale clientId', () => {
       const investerList = [Invester.deserialize({ investor_id: 110 }), Invester.deserialize({ investor_id: 111 })];
+      const expected = [Invester.deserialize({ investor_id: 111 })];
       component.clientId = '111';
 
       component.setInvesterById(investerList);
 
-      expect(component.filterInvester).toEqual([investerList[1]]);
+      expect(component.filterInvester).toEqual(expected);
+    });
+
+    it('should NOT set filterInvester when invester_id not equale to clientId', () => {
+      const investerList = [Invester.deserialize({ investor_id: 110 }), Invester.deserialize({ investor_id: 111 })];
+      component.clientId = '113';
+
+      component.setInvesterById(investerList);
+
+      expect(component.filterInvester).not.toEqual(investerList);
     });
   });
 
