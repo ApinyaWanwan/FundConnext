@@ -1,16 +1,17 @@
 import { InvesterDetailComponent } from './invester-detail.component';
 import { ActivatedRoute } from '@angular/router';
+import { InvesterService } from '../services/invester.service';
 import { of } from 'rxjs';
 
 describe('InvesterDetailComponent', () => {
   let component: InvesterDetailComponent;
+  let investerService;
   let route: ActivatedRoute;
-  let router;
 
   beforeEach(() => {
     route = new ActivatedRoute();
-    router = jasmine.createSpyObj('Router', [ 'navigate', 'getCurrentNavigation' ]);
-    component = new InvesterDetailComponent(route, router);
+    investerService = new InvesterService(null);
+    component = new InvesterDetailComponent(route, investerService);
   });
 
   describe('ngOnInit', () => {
@@ -27,6 +28,16 @@ describe('InvesterDetailComponent', () => {
     it('should call getDetails', () => {
       component.ngOnInit();
       expect(component.getDetails).toHaveBeenCalled();
+    });
+  });
+
+  describe('getDetails', () => {
+    it('should call service get details', () => {
+      spyOn(investerService, 'getDetails').and.returnValue(of());
+
+      component.getDetails();
+
+      expect(investerService.getDetails).toHaveBeenCalled();
     });
   });
 
