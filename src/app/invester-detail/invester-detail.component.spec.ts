@@ -2,6 +2,7 @@ import { InvesterDetailComponent } from './invester-detail.component';
 import { ActivatedRoute } from '@angular/router';
 import { InvesterService } from '../services/invester.service';
 import { of } from 'rxjs';
+import { Invester } from '../model/invester.model';
 
 describe('InvesterDetailComponent', () => {
   let component: InvesterDetailComponent;
@@ -39,6 +40,16 @@ describe('InvesterDetailComponent', () => {
 
       expect(investerService.getDetails).toHaveBeenCalled();
     });
+
+    it('should set investerList with response from service', () => {
+      const response = [Invester.deserialize({ investor_id: 110 })];
+      spyOn(investerService, 'getDetails').and.returnValue(of(response));
+
+      component.getDetails();
+
+      expect(component.investerList).toEqual(response);
+    });
+
   });
 
 });
