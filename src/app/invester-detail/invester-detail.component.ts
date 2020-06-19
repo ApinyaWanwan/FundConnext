@@ -10,8 +10,8 @@ import { Invester } from '../model/invester.model';
 })
 export class InvesterDetailComponent implements OnInit {
   clientId: string;
-  investerDetailList: Invester[];
-  investerDetail: Invester;
+  investerList: Invester[];
+  filterInvester: Invester[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -28,6 +28,17 @@ export class InvesterDetailComponent implements OnInit {
   }
 
   getDetails() {
+    this.investerService.getDetails().subscribe(data => {
+      this.investerList = data;
+      this.setInvesterById(this.investerList);
+    });
+  }
 
+  setInvesterById(investerList: Invester[]) {
+    investerList.forEach(el => {
+      if (el.investor_id === Number(this.clientId)) {
+        this.filterInvester.push(el);
+      }
+    });
   }
 }

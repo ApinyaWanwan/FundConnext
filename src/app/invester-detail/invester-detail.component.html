@@ -12,14 +12,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
+      <tr *ngFor="let item of filterInvester">
+        <td>{{ item.investor_id }}</td>
+        <td>{{ item.amc_code }}</td>
+        <td>{{ item.unitholder_id }}</td>
+        <td>{{ item.unitholder_type }}</td>
+        <td>{{ item.fund_code }}</td>
+        <td>{{ item.unit }}</td>
+        <td>{{ item.thb }}</td>
       </tr>
     </tbody>
   </table>
