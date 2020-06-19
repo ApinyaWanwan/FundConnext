@@ -33,6 +33,10 @@ describe('InvesterDetailComponent', () => {
   });
 
   describe('getDetails', () => {
+    beforeEach(() => {
+      spyOn(component, 'setInvesterById');
+    });
+
     it('should call service get details', () => {
       spyOn(investerService, 'getDetails').and.returnValue(of());
 
@@ -48,6 +52,15 @@ describe('InvesterDetailComponent', () => {
       component.getDetails();
 
       expect(component.investerList).toEqual(response);
+    });
+
+    it('call setInvesterById with investerList', () => {
+      const response = [Invester.deserialize({ investor_id: 110 })];
+      spyOn(investerService, 'getDetails').and.returnValue(of(response));
+
+      component.getDetails();
+
+      expect(component.setInvesterById).toHaveBeenCalledWith(component.investerList);
     });
 
   });
