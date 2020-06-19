@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { InvesterService } from '../services/invester.service';
 import { of } from 'rxjs';
 import { Invester } from '../model/invester.model';
+import { async } from '@angular/core/testing';
 
 describe('InvesterDetailComponent', () => {
   let component: InvesterDetailComponent;
@@ -19,16 +20,24 @@ describe('InvesterDetailComponent', () => {
     beforeEach(() => {
       spyOn(component, 'getClientIdFromRoute').and.returnValue('MOCK_ID');
       spyOn(component, 'getDetails');
+      spyOn(component, 'setInvesterById');
+      spyOn(component, 'summaryTHB');
     });
 
-    it('should set client id from route', () => {
-      component.ngOnInit();
+    it('should set client id from route', async () => {
+      await component.ngOnInit();
       expect(component.clientId).toBe('MOCK_ID');
     });
 
-    it('should call getDetails', () => {
-      component.ngOnInit();
+    it('should call getDetails', async () => {
+      await component.ngOnInit();
       expect(component.getDetails).toHaveBeenCalled();
+    });
+
+    it('should call setInvesterById with investerList', async () => {
+      component.investerList = [Invester.deserialize({ investor_id: 110 })];
+      await component.ngOnInit();
+      expect(component.setInvesterById).toHaveBeenCalledWith(component.investerList);
     });
   });
 
@@ -37,30 +46,21 @@ describe('InvesterDetailComponent', () => {
       spyOn(component, 'setInvesterById');
     });
 
-    it('should call service get details', () => {
+    it('should call service get details', async () => {
       spyOn(investerService, 'getDetails').and.returnValue(of());
 
-      component.getDetails();
+      await component.getDetails();
 
       expect(investerService.getDetails).toHaveBeenCalled();
     });
 
-    it('should set investerList with response from service', () => {
+    it('should set investerList with response from service', async () => {
       const response = [Invester.deserialize({ investor_id: 110 })];
       spyOn(investerService, 'getDetails').and.returnValue(of(response));
 
-      component.getDetails();
+      await component.getDetails();
 
       expect(component.investerList).toEqual(response);
-    });
-
-    it('call setInvesterById with investerList', () => {
-      const response = [Invester.deserialize({ investor_id: 110 })];
-      spyOn(investerService, 'getDetails').and.returnValue(of(response));
-
-      component.getDetails();
-
-      expect(component.setInvesterById).toHaveBeenCalledWith(component.investerList);
     });
   });
 

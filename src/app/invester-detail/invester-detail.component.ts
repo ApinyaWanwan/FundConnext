@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { InvesterService } from '../services/invester.service';
 import { Invester } from '../model/invester.model';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-invester-detail',
@@ -12,26 +13,30 @@ export class InvesterDetailComponent implements OnInit {
   clientId: string;
   investerList: Invester[];
   filterInvester: Invester[] = [];
+  sum: string;
 
   constructor(
     private route: ActivatedRoute,
     private investerService: InvesterService
   ) {}
 
-  ngOnInit() {
+  async ngOnInit() {
     this.clientId = this.getClientIdFromRoute();
-    this.getDetails();
+    await this.getDetails();
+    await this.setInvesterById(this.investerList);
+    await this.summaryTHB();
   }
 
   getClientIdFromRoute() {
     return this.route.snapshot.paramMap.get('clientId');
   }
 
-  getDetails() {
-    this.investerService.getDetails().subscribe(data => {
-      this.investerList = data;
-      this.setInvesterById(this.investerList);
-    });
+  async getDetails() {
+    try {
+      this.investerList = await this.investerService.getDetails().pipe(first()).toPromise();
+    } catch (err) {
+      console.log('Get invester details error: ', err);
+    }
   }
 
   setInvesterById(investerList: Invester[]) {
@@ -40,5 +45,15 @@ export class InvesterDetailComponent implements OnInit {
         this.filterInvester.push(el);
       }
     });
+
+  }
+
+  summaryTHB() {
+    let s = 0.00;
+    this.filterInvester.forEach(item => {
+      s =  s + item.thb;
+      this.sum = s.toFixed(2);
+    });
+
   }
 }
